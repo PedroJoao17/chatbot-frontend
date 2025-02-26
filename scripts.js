@@ -2,7 +2,7 @@
 
 async function fetchBotStatus() {
     try {
-        let response = await fetch('http://localhost:80/bot-status'); // Endpoint para verificar status do bot
+        let response = await fetch('https://chatbot-backend-production-a1aa.up.railway.app/bot-status'); // Endpoint para verificar status do bot
         if (!response.ok) throw new Error("Falha ao obter status");
         let data = await response.json();
         let statusIndicator = $("#status-indicator");
@@ -23,7 +23,7 @@ async function fetchBotStatus() {
 // Função para carregar o QR Code
 async function loadQRCode() {
     try {
-        const response = await fetch('http://localhost:80/qrcode');  // Endpoint para obter o QR Code
+        const response = await fetch('https://chatbot-backend-production-a1aa.up.railway.app/qrcode');  // Endpoint para obter o QR Code
         if (response.ok) {
             const data = await response.json();
             $("#qrCode").attr("src", data.qrcode); // Usa o QR Code gerado
