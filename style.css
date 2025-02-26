@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    height: 100%;
+}
+
+html, body{
+    height: 100%;
+}
+
+.bg-bordo{
+    background-color: #800020;
+    height: auto;
+}
+
+.bg-height{
+    height: auto;
+    background-color: #f8f9fa;
+}
+
+.h1-height{
+    height: auto;
+}
