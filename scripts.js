@@ -3,7 +3,7 @@
 document.getElementById('startButton').addEventListener('click', async () => {
     try {
         // Enviar requisição para o backend online
-        const response = await fetch('https://seu-backend-online-no-railway.com/start-service', {
+        const response = await fetch('https://chatbot-backend-production-ec31.up.railway.app/start-service', {
             method: 'POST',
         });
 
