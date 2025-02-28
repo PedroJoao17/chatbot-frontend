@@ -1,6 +1,6 @@
 async function fetchBotStatus() {
     try {
-        let response = await fetch('https://57b4-189-2-84-114.ngrok-free.app/bot-status'); // Endpoint para verificar status do bot
+        let response = await fetch('https://2e1c-189-2-84-114.ngrok-free.app/bot-status'); // Endpoint para verificar status do bot
         if (!response.ok) throw new Error("Falha ao obter status");
         let data = await response.json();
         let statusIndicator = $("#status-indicator");
@@ -21,7 +21,7 @@ async function fetchBotStatus() {
 // Função para carregar o QR Code
 async function loadQRCode() {
     try {
-        const response = await fetch('https://57b4-189-2-84-114.ngrok-free.app/qrcode');  // Endpoint para obter o QR Code
+        const response = await fetch('https://2e1c-189-2-84-114.ngrok-free.app/qrcode');  // Endpoint para obter o QR Code
         if (response.ok) {
             const data = await response.json();
             $("#qrCode").attr("src", data.qrcode); // Usa o QR Code gerado
