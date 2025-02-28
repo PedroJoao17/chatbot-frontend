@@ -1,5 +1,22 @@
 // Função para verificar o status do bot
 
+document.getElementById('startButton').addEventListener('click', async () => {
+    try {
+        // Enviar requisição para o backend online
+        const response = await fetch('https://seu-backend-online-no-railway.com/start-service', {
+            method: 'POST',
+        });
+
+        const data = await response.json();
+        // Exibir a mensagem recebida do backend local no frontend
+        document.getElementById('response-message').textContent = data.message;
+    } catch (error) {
+        console.error('Erro ao se comunicar com o backend:', error);
+        document.getElementById('response-message').textContent = 'Erro ao iniciar o serviço.';
+    }
+});
+
+/*
 async function fetchBotStatus() {
     try {
         let response = await fetch('https://chatbot-backend-production-a1aa.up.railway.app/bot-status'); // Endpoint para verificar status do bot
