@@ -1,6 +1,6 @@
 async function fetchBotStatus() {
     try {
-        let response = await fetch('https://8b16-189-2-84-114.ngrok-free.app/bot-status', {
+        let response = await fetch('https://66c7-189-2-84-114.ngrok-free.app/bot-status', {
             method: 'GET',
             headers: {
                 'ngrok-skip-browser-warning': 'true' // Cabeçalho para evitar o redirecionamento
