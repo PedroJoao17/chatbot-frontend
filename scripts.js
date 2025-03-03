@@ -26,7 +26,7 @@ async function fetchBotStatus() {
 // Função para carregar o QR Code
 async function loadQRCode() {
     try {
-        const response = await fetch('https://66c7-189-2-84-114.ngrok-free.app/qrcode', {
+        const response = await fetch('https://cbd4-189-2-84-114.ngrok-free.app/qrcode', {
             method: 'GET',
             headers: {
                 'ngrok-skip-browser-warning': 'true' // Cabeçalho para evitar o redirecionamento também aqui
